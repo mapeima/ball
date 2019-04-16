@@ -1,12 +1,12 @@
 import logging
 
-from model.DBConnection import DBCOnnection
+from model.DBConnection import DBConnection
 
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.DEBUG)
 logger = logging.getLogger(__name__)
 
-connection = DBCOnnection()
+connection = DBConnection()
 
 
 def get_user_by_id(user_id):
