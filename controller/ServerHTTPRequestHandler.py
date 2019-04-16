@@ -7,7 +7,7 @@ from uuid import uuid4
 import model.items
 import model.users
 
-tokens = {'matias': 'prueba'}
+tokens = {'matias': 'test'}
 
 
 class ServerHTTPRequestHandler(BaseHTTPRequestHandler):
