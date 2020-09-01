@@ -1,10 +1,10 @@
 import pymysql.cursors
 
 
-class DBCOnnection:
-    """Wrapper class for persistant database connection.
+class DBConnection:
+    """Wrapper class for persistent database connection.
 
-    Atributes:
+    Attributes:
         connection (pymysql.connections.Connection): The connection object to connect to the database.
         cursor (pymysql.cursors.Cursor): The cursor object to execute statements to the database.
     """
