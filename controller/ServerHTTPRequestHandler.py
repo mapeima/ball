@@ -11,23 +11,20 @@ tokens = {'matias': 'prueba'}
 
 
 class ServerHTTPRequestHandler(BaseHTTPRequestHandler):
-    """Handles the HTTP requests."""
+
+    # TODO: Implement better exception cases
 
     def do_HEAD(self):
-        """Handles the operations of type HEAD."""
         self.send_response(200)
         self.send_header("Content-type", "text/html")
         self.end_headers()
 
     def do_GET(self):
-        """Handles the operations of type GET."""
         self.send_response(200)
-        self.send_header("Content-type", "text/html")
         self.end_headers()
         self.wfile.write(b'Hello word!')
 
     def do_POST(self):
-        """Handles the operations of type POST."""
         self.send_response(200)
         self.end_headers()
 
